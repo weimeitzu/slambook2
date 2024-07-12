@@ -43,7 +43,7 @@ find_package(GFlags REQUIRED)
 include_directories(${GFLAGS_INCLUDE_DIRS})
 
 # csparse
-find_package(CSparse REQUIRED)
+find_package(CXSparse REQUIRED)
 include_directories(${CSPARSE_INCLUDE_DIR})
 
 set(THIRD_PARTY_LIBS
