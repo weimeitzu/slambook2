@@ -1,6 +1,13 @@
 cmake_minimum_required(VERSION 2.8)
 project(slambook2)
 
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(include)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
+
 add_subdirectory(ch2)
 add_subdirectory(ch3)
 add_subdirectory(ch4)
