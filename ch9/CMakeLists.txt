@@ -10,7 +10,7 @@ Find_Package(G2O REQUIRED)
 Find_Package(Eigen3 REQUIRED)
 Find_Package(Ceres REQUIRED)
 Find_Package(Sophus REQUIRED)
-Find_Package(CSparse REQUIRED)
+Find_Package(CXSparse REQUIRED)
 
 SET(G2O_LIBS g2o_csparse_extension g2o_stuff g2o_core cxsparse)
 
