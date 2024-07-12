@@ -8,6 +8,12 @@ include_directories(include)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 
+if (MSVC)
+    add_compile_options("/utf-8")
+else ()
+    add_compile_options("-finput-charset=UTF-8")
+endif ()
+
 add_subdirectory(ch2)
 add_subdirectory(ch3)
 add_subdirectory(ch4)
